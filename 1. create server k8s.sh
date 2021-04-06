@@ -95,7 +95,7 @@ az vm create \
   --admin-password Upgrade-2035UP \
   --image UbuntuLTS \
   --nics server-01-NIC \
-  --size Standard_B1ms  
+  --size Standard_B2ms  
 
 # Run scripts - server #1   
 az vm extension set \
