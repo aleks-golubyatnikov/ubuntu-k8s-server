@@ -104,4 +104,5 @@ az vm extension set \
   --name CustomScript \
   --vm-name vm-k8s-server-01 \
   --resource-group RG-k8s-server \
-  --settings '{"commandToExecute":"apt-get -y update && apt-get -y install apache2 && echo k8s: vm-k8s-server-01 > /var/www/html/index.html"}'
+  --settings '{"commandToExecute":"apt-get -y update && apt-get -y install apache2 && echo k8s: vm-k8s-server-01 > /var/www/html/index.html && mkdir /home/init-server && chmod 0755 /home/init-server && git clone https://github.com/aleks-golubyatnikov/ubuntu-k8s-server.git /home/init-server && chmod 0755 /home/init-server/run.sh && cd /home/init-server && bash run.sh"}'
+  
