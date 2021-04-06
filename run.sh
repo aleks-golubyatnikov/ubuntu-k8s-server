@@ -16,3 +16,6 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 #minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 minikube start  >> instalation.log
+
+DateTime=$(date +"%Y/%m/%d %H:%M:%S")
+echo "$DateTime end installation..." >> instalation.log
