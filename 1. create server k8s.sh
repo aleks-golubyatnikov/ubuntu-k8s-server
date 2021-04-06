@@ -104,4 +104,3 @@ az vm extension set \
   --vm-name vm-k8s-server-01 \
   --resource-group RG-k8s-server \
   --settings '{"commandToExecute":"apt-get -y update && apt-get -y install apache2 && echo k8s: vm-k8s-server-01 > /var/www/html/index.html"}'
-
