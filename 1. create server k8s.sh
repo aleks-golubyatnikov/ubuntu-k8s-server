@@ -96,7 +96,8 @@ az vm create \
   --image UbuntuLTS \
   --nics server-01-NIC \
   --size Standard_B1ms  
-   
+
+# Run scripts - server #1   
 az vm extension set \
   --publisher Microsoft.Azure.Extensions \
   --version 2.0 \
