@@ -10,6 +10,10 @@
 #  -- Architecture:
 #     - server #1: vm-k8s-server-01 [10.0.1.10];
 
+# !!!
+#You would need to log out and log back in so that your group membership is re-evaluated
+# Then run minikube: minikube start
+
 az group create \
 --name RG-k8s-server \
 --location centralus
