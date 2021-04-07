@@ -18,7 +18,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest
 sudo dpkg -i minikube_latest_amd64.deb >> instalation.log 2>&1
 
 sudo groupadd docker >> instalation.log 2>&1
-sudo usermod -aG docker ${USER} >> instalation.log 2>&1
+sudo usermod -aG docker golubyatnikov >> instalation.log 2>&1
 
 DateTime=$(date +"%Y/%m/%d %H:%M:%S")
 echo "$DateTime end installation..." >> instalation.log
