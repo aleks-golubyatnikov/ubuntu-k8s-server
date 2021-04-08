@@ -10,13 +10,12 @@ spec:
     metadata:
       name: nginx
       labels:
-        app: nginx
         env: production
     spec:
       containers:
         - name: nginx
           image: nginx
-  replicas: 7
+  replicas: 3
   selector:
     matchLabels:
       env: production
