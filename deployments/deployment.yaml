@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: new-deployment
+  name: myapp-deployment
   labels:
     env: production
-    name: new-deplyment
+    name: new-deployment
 spec:
   template:
     metadata:
@@ -16,7 +16,7 @@ spec:
       containers:
         - name: nginx
           image: nginx
-  replicas: 3
+  replicas: 7
   selector:
     matchLabels:
       env: production

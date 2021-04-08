@@ -1,10 +1,11 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: new-replica-set
+  name: myapp-replica-set
   labels:
     env: production
-    name: new-repica
+    name: new-repicaset
+    app: myapp
 spec:
   template:
     metadata:
