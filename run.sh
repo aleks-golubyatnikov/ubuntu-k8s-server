@@ -1,6 +1,5 @@
 #!/bin/bash
-DateTime=$(date +"%Y/%m/%d %H:%M:%S")
-echo "$DateTime start installation..." >> instalation.log
+echo "$(date +"%Y/%m/%d %H:%M:%S") start installation..." >> instalation.log
 
 #Docker
 sudo apt-get -y install apt-transport-https ca-certificates curl gnupg lsb-release 2>&1 >> instalation.log 2>&1
@@ -20,8 +19,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl >> instalati
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 sudo dpkg -i minikube_latest_amd64.deb >> instalation.log 2>&1
 
-DateTime=$(date +"%Y/%m/%d %H:%M:%S")
-echo "$DateTime end installation..." >> instalation.log
+echo "$(date +"%Y/%m/%d %H:%M:%S") end installation..." >> instalation.log
 
 #minikube start
 
